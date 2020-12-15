@@ -297,7 +297,7 @@ section#articles h2 {
 
 /* ------------- Hero --------------- */
 .hero-image {
-  background-image: url("../img/mission_feature.jpg");
+  /*background-image: url("../img/mission_feature.jpg"); */
   /* height: 50%; */
   background-position: center;
   background-repeat: no-repeat;

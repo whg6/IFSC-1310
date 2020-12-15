@@ -345,6 +345,7 @@ section#articles h2 {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  width: 100%;
 }
 
 /* Hide the images by default */
@@ -466,7 +467,7 @@ aside article.widget {
 }
 
 .widget.overview table {
-  font-size: 0.7em;
+  font-size: 0.9em;
   border-collapse: collapse;
   width:100%;
 }
@@ -611,10 +612,6 @@ footer#colophon {
 
 #recentHistory tr:nth-child(odd){
   background:#DCDCDC;
-}
-
-#recentHistory tr:hover{
-  background:#8EA6B8;
 }
 
 #recentHistory h2{
