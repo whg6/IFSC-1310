@@ -1,0 +1,326 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ---------------Utilty Styles ----------------- */
+.container{
+  width:80vw;
+  margin:100px auto;
+  max-width:900px;
+}
+
+/* Responsive Images */
+
+img{
+  max-width:100%;
+}
+
+.img-right{
+  float:right;
+  margin: 10px 0 10px 20px;
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+
+.img-left{
+  float:left;
+  margin: 10px 20px 10px 0;
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+
+.img-center{
+  display:block;
+  margin: 20px auto;
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+
+/* ---------------Global Styles----------------- */
+
+body {
+  background-color: #6096AE;
+  font-family: "Comic Sans MS", cursive, sans-serif
+  margin:0;
+  line-height:2.5;
+}
+
+header.primary {
+  background-color: #1FAEAD; /*#60EB8C; */
+  text-align:center;
+  color:#ffffff;
+  text-shadow: 2px 2px #000000;
+  /*Longform */
+  padding-top:60px;
+  padding-right:50px;
+  padding-bottom:40px;
+  padding-left:40px;
+  /* Shorthand T,R,B,L */
+  padding:40px 40px 20px 40px;
+  /* Top/Bottom | Left/Right */
+  padding:20px 40px;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.2' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+header.primary h1{
+  font-size:3.2rem;
+  margin: 20px 0;
+}
+
+header.primary h1 a{
+  text-decoration:none;
+  color:white;
+}
+
+header.primary h2{
+  font-size:2em;
+  /* Top | Left & Right | Bottom */
+  margin:20px auto 40px;
+}
+
+header.primary nav{
+  margin: 20px auto;
+  width:80vw;
+}
+
+header.primary nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  padding:0;
+}
+
+header.primary nav li{
+  list-style-type:none;
+  padding:10px;
+}
+
+header.primary nav li a:link, header.primary nav li a:visited{
+  color:white;
+  text-decoration:#fff;
+  background-color:#000;
+  background-color:rgba(0,0,0,.4);
+  padding:8px 16px;
+  border-radius:20px;
+  transition:.6s;
+}
+
+header.primary nav li a:hover, header.primary nav li a:active{
+   background-color:rgba(196, 6, 6, 0.8);
+}
+
+#intro{
+  border-bottom:1px solid #c0c0c0;
+  padding-bottom:1.5em;
+}
+
+#intro h2{
+  color:#3b638b;
+}
+
+header.primary h1 a{
+  display:block;
+  background:url("../css-demo/assets/img/its-a-wonderful-life.jpg");
+  /* background:url("../img/image-name.png");   */
+  background-repeat:no-repeat;
+  width:700px;
+  height:129px;
+  margin:auto;
+  text-indent:100%;
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+#intro p{
+  line-height:1.5;
+}
+section#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  border-bottom:1px solid #c0c0c0;
+  padding-bottom:2.6em;
+}
+
+#content article.post{
+  width:30%;
+  box-shadow: 0px 4px 8px rgba(0,0,0,.4);
+  padding:35px;
+  transition:.6s;
+}
+
+#content article.post:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,.4);
+}
+
+#content article time, #content figcaption, #content article footer{
+  font-size:.8rem;
+  text-transform:uppercase;
+  color:grey;
+}
+
+#content .post figure{
+  margin:0;
+}
+
+#content .post a:link, #content .post a:visited{
+  color:#3b638b;
+}
+
+#content article {
+  font-size:.8rem;
+}
+/*Attribute Selector*/
+aside[role="complementary"]{
+ /* background-color: #49CBFF; */
+  color:#000;
+  padding:40px;
+}
+aside .container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+aside article.widget{
+  width:32vw;
+}
+
+aside article a:link, aside article a:visited{
+  color:#fff;
+  display:block;
+  margin-top:20px;
+  letter-spacing:1.2px;
+}
+
+aside article a:hover, aside article a:active{
+  text-decoration:none;
+}
+
+aside article footer{
+  display:none;
+}
+
+#colophon{
+   background-color: #3b638b;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.2' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+}
+header.primary h1 a{
+  display:block;
+  background-image:url("https://i.postimg.cc/85WXgXqD/its-a-wonderful-life.jpg");
+  background-repeat:no-repeat;
+  width:700px;
+  height:129px;
+  margin:auto;
+  text-indent:100%;
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+#colophon h6{
+  padding:20px;
+  margin:0;
+  color:#fff;
+  text-align:left;
+  font-size:.8rem;
+  text-transform:lowercase;
+}
+
+#additional-elements h2{
+ border-bottom:1px dotted #c0c0c0;
+  color:#3b638b;
+}
+
+#additional-elements a:link, #additional-elements a:visited{
+  color:#3b638b;
+}
+
+#additional-elements a:hover, #additional-elements a:active{
+text-decoration:none;
+}
+#additional-elements h3{
+  border-left:5px solid #3b638b;
+  padding:3px 7px;
+}
+
+caption{
+  font-weight:bold;
+  font-size:1.3rem;
+  margin:10px;
+}
+table{
+  width:100%;
+  border:1px solid #c0c0c0;
+  border-collapse: collapse;
+}
+
+th{
+  background:#3b638b;
+  color:#fff;
+  text-align:left;
+  padding:5px;
+}
+
+td{
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+
+tr:nth-child(even){
+  background:#c0c0c057;
+}
+
+tr:hover{
+  background:lightsteelblue;
+}
+
+
+#additional-elements ol{
+  list-style-type:upper-roman;
+}
+
+#additional-elements ul ul{
+  list-style-type:square;
+}
+
+#additional-elements dt{
+  font-weight:bold;
+
+}
+#additional-elements dd{
+  margin:0;
+}
+
+dd + dt{
+  margin-top:20px;
+}
+
+#additional-elements blockquote{
+  border-top:2px solid #c0c0c0;
+  border-bottom:2px solid #c0c0c0;
+  padding:40px;
+  background:#c0c0c057;
+}
+
+@media screen and (max-width:680px){
+  
+header.primary nav ul{
+  flex-direction:column;
+  max-width:400px;
+  margin: 0 auto;
+}
+  
+  header.primary nav a{
+    display:block;
+  }
+  
+  
+}
