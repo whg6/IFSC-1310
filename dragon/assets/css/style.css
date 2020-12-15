@@ -303,6 +303,11 @@ section#articles h2 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: auto;
 }
 
 .hero-text {
@@ -326,7 +331,8 @@ section#articles h2 {
 }
 
 #hero {
-  padding: 4em 0;
+  padding: 0em 0;
+  margin: -26px;
 }
 
 
