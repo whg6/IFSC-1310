@@ -1,7 +1,10 @@
 $(document).ready(function() {
 
 $('.gallery').cycle({
-		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-	});
+		 // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+	fx:    'curtainX', 
+    sync:  false, 
+    delay: -2000 
+});
 
 });
